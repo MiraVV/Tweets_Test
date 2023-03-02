@@ -5,7 +5,7 @@
 Цей проєкт був розроблений за допомогою
 [Create React App](https://github.com/facebook/create-react-app). Для знайомства
 и налаштувань додаткових спроможностей
-[звертійся до документації](https://facebook.github.io/create-react-app/docs/getting-started).
+[звертайся до документації](https://facebook.github.io/create-react-app/docs/getting-started).
 
 ## Технічне завдання
 
