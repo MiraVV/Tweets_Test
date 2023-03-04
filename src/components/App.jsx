@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-
+import { getFollow, getisActive } from '../redux/follow-selector';
 import Statistics from './Statistics/Statistics';
 import './App.styled.jsx';
 import CountOptions from './CountOptions/CountOptions';
@@ -24,8 +24,8 @@ import {
 } from './App.styled';
 
 export default function App() {
-  const follow = useSelector(state => state.click.value);
-  const isActive = useSelector(state => state.click.isActive);
+  const follow = useSelector(getFollow);
+  const isActive = useSelector(getisActive);
   const dispatch = useDispatch();
 
   const onBtnFollow = () => {
