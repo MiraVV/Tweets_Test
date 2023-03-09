@@ -1,7 +1,3 @@
-**Read in other languages: [Українська](README.md), [Polska](README.pl.md).**
-
-# React homework template
-
 Цей проєкт був розроблений за допомогою
 [Create React App](https://github.com/facebook/create-react-app). Для знайомства
 и налаштувань додаткових спроможностей
