@@ -22,8 +22,11 @@ export const FollowButton = styled.button`
   border-radius: 10.3108px;
 
   color: #373737;
+  cursor: pointer;
 
   :hover {
-    box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.3),
+      inset 0px -2.19582px 2.39163px rgba(0, 0, 0, 0.3),
+      inset 0px 2.39163px 2.39163px rgba(0, 0, 0, 0.3);
   }
 `;

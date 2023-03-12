@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import banner from './img/picture2.png';
 
 export const Wrapper = styled.div`
   width: 380px;
@@ -27,47 +28,23 @@ export const Container = styled.div`
   justify-content: center;
 `;
 
-export const Tweets = styled.span`
-  color: #ebd8ff;
-  margin-bottom: 16px;
-`;
-
-export const SectionInfo = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`;
-
 export const SectionHeader = styled.div`
   position: relative;
+  top: 28px;
+  left: 36px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 214px;
-`;
-
-export const LineContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 62px;
-`;
-
-export const Line = styled.hr`
-  width: 40%;
-  height: 8px;
-  border: none;
-  margin: 0px;
-  background: #ebd8ff;
-  box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.06),
-    inset 0px -1.71846px 3.43693px #ae7be3, inset 0px 3.43693px 2.5777px #fbf8ff;
+  background-image: url(${banner});
+  width: 308px;
+  height: 168px;
+  background-repeat: no-repeat;
 `;
 
 export const Logo = styled.img`
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: -8px;
+  left: -16px;
   width: 76px;
   height: 22px;
 `;
@@ -89,9 +66,9 @@ export const Avatar = styled.img`
 `;
 
 export const AvatarBorder = styled.div`
-position: relative;
-position: absolute;
-top: 178px;
+  position: relative;
+  position: absolute;
+  top: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,13 +78,13 @@ top: 178px;
   border: 9px solid #ebd8ff;
 
   border-radius: 50%;
-  box-shadow: groove 0px 4.39163px 4.39163px rgba(0, 0, 0, 0.06), 0px -2.19582px 4.39163px #AE7BE3, 0px 4.39163px 3.29372px #FBF8FF;
-}
+  box-shadow: groove 0px 4.39163px 4.39163px rgba(0, 0, 0, 0.06),
+    0px -2.19582px 4.39163px #ae7be3, 0px 4.39163px 3.29372px #fbf8ff;
 `;
 
 export const AvatarContainer = styled.div`
-position: absolute;
-top: 178px;
+  position: absolute;
+  top: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,12 +92,55 @@ top: 178px;
   height: 80px;
   border: none;
   background: transparent;
+  z-index: 300;
 
   box-shadow: 0px 4.39163px 4.39163px rgba(0, 0, 0, 0.06),
-   inset 0px -2.19582px 4.39163px #AE7BE3,
-   inset 0px 4.39163px 3.29372px #FBF8FF;
+    inset 0px -2.19582px 4.39163px #ae7be3,
+    inset 0px 4.39163px 3.29372px #fbf8ff;
   border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
-}
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 45%;
+    height: 8px;
+    border: none;
+    margin: 0px;
+    background: #ebd8ff;
+    box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.06),
+      inset 0px -1.71846px 3.43693px #ae7be3,
+      inset 0px 3.43693px 2.5777px #fbf8ff;
+    right: 100%;
+    left: -187.5%;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 45%;
+    height: 8px;
+    border: none;
+    margin: 0px;
+    background: #ebd8ff;
+    box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.06),
+      inset 0px -1.71846px 3.43693px #ae7be3,
+      inset 0px 3.43693px 2.5777px #fbf8ff;
+    left: 100%;
+    right: -187.5%;
+  }
+`;
+
+export const Tweets = styled.span`
+  color: #ebd8ff;
+
+  margin-bottom: 16px;
+`;
+
+export const SectionInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 116px;
 `;
